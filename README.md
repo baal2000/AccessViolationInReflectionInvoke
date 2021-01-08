@@ -8,6 +8,7 @@ Framework: .Net Core version 2.1 and above
 OS: x64 Windows (8 physical cores laptop should work just fine)
 
 Issue: https://github.com/dotnet/runtime/issues/45929
+This repro is used as a regression test as almost unchanged copy https://github.com/dotnet/runtime/blob/master/src/tests/Regressions/coreclr/GitHub_45929/test45929.cs
 
 Compile the console app and run. 
 The crash is likely caused by a race condition, it may take time to happen after a random number of the test repetitions. Be patient.
